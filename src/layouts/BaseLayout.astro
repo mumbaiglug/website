@@ -1,0 +1,47 @@
+---
+import "../styles/global.css";
+
+import { metaData, umami } from "@/utils";
+const title = Astro.props.title || metaData.title;
+const description = Astro.props.description || metaData.description;
+const image = Astro.props.image || metaData.image;
+const author = Astro.props.author || metaData.author;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- SEO -->
+    <meta name="description" content={description} />
+    <meta name="author" content={author} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content={title} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={image} />
+    <link rel="canonical" href={Astro.url.href} />
+    <meta name="robots" content="index, follow" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <!-- SEO -->
+
+    <script
+      is:inline
+      defer
+      src={umami.src}
+      data-website-id={umami.id}
+      data-domains={umami.domains}></script>
+  </head>
+  <body class="h-screen w-screen">
+    <slot />
+  </body>
+</html>

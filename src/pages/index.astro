@@ -1,0 +1,48 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Welcome to Launchpad!">
+  <div
+    class="w-full h-screen flex flex-col gap-4 items-center justify-center bg-gradient-to-tr from-zinc-800 to-zinc-950 text-white text-center p-6"
+  >
+    <h1 class="text-4xl font-extrabold md:text-5xl lg:text-6xl">
+      Ready to launch? 🚀
+    </h1>
+    <p class="text-lg md:text-xl mt-4 opacity-80">
+      Kickstart your next project with Launchpad, a minimal and powerful Astro
+      starter.
+    </p>
+    <a
+      href="https://github.com/nnisarggada/launchpad"
+      title="Launchpad on GitHub"
+      target="_blank"
+      class="px-6 py-3 mt-4 bg-zinc-700 text-white text-lg font-semibold rounded-lg shadow-lg
+         hover:bg-zinc-600 hover:scale-105 transition-transform duration-200 ease-in-out
+         flex items-center gap-2"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        class="w-5 h-5"
+      >
+        <path
+          d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.302 3.438 9.8 8.207 11.385.6.113.793-.262.793-.583 0-.288-.01-1.05-.016-2.06-3.338.724-4.042-1.608-4.042-1.608-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.204.085 1.837 1.235 1.837 1.235 1.07 1.834 2.807 1.303 3.492.996.108-.776.42-1.303.762-1.603-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.124-.302-.535-1.52.116-3.17 0 0 1.008-.322 3.3 1.23a11.56 11.56 0 0 1 3-.404c1.02.005 2.043.138 3 .404 2.29-1.553 3.295-1.23 3.295-1.23.653 1.65.242 2.868.118 3.17.77.84 1.234 1.91 1.234 3.22 0 4.61-2.807 5.625-5.478 5.92.43.37.81 1.1.81 2.22 0 1.607-.015 2.897-.015 3.29 0 .324.19.7.8.58C20.566 22.092 24 17.6 24 12.297 24 5.67 18.627.297 12 .297z"
+        ></path>
+      </svg>
+      Get Started
+    </a>
+    <p class="mt-8 text-neutral-500 text-base md:text-lg lg:text-xl">
+      Created by
+      <a
+        href="https://nnisarg.in"
+        title="Nnisarg's Portfolio"
+        target="_blank"
+        class="underline text-amber-500/50 hover:text-amber-500 font-semibold transition"
+      >
+        Nnisarg Gada
+      </a>
+    </p>
+  </div>
+</BaseLayout>
