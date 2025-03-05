@@ -7,7 +7,7 @@
   --color-background: #131313;
   --color-foreground: #f3e3ca;
   --color-primary: #ff914c;
-  --color-primary-accent: #FFC39E;
+  --color-primary-accent: #ffc39e;
   --color-secondary: #1a2237;
   --color-secondary-accent: #98b2e3;
 }
@@ -29,5 +29,9 @@
   .h-screen {
     height: 100vh;
     height: 100dvh;
+  }
+
+  section {
+    scroll-margin-top: 1rem;
   }
 }

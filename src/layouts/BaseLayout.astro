@@ -38,12 +38,12 @@ const author = Astro.props.author || metaData.author;
     <link rel="sitemap" href="/sitemap-index.xml" />
     <!-- SEO -->
 
-    <!--<script-->
-    <!--  is:inline-->
-    <!--  defer-->
-    <!--  src={umami.src}-->
-    <!--  data-website-id={umami.id}-->
-    <!--  data-domains={umami.domains}></script>-->
+    <script
+      is:inline
+      defer
+      src={umami.src}
+      data-website-id={umami.id}
+      data-domains={umami.domains}></script>
   </head>
   <body class="h-screen w-screen bg-background text-foreground">
     <Navbar />

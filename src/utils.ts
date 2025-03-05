@@ -1,24 +1,42 @@
+import { warn } from "node_modules/astro/dist/core/logger/core";
+
 export const metaData = {
   title: "Mumbai GNU/Linux Users' Group",
-  description: "A community-driven GNU/Linux Users Group (GLUG) in Mumbai promoting Swatantra Software, open-source collaboration, and digital freedom through advocacy, education, and user support.",
+  description: "A community-driven GNU/Linux Users' Group (GLUG) in Mumbai promoting Swatantra Software, open-source collaboration, and digital freedom through advocacy, education, and user support.",
   image: "https://mumbaiglug.org/poster.jpg",
   author: "Mumbai GLUG",
 };
 
 export const umami = {
   src: "https://umami.nnisarg.in/script.js",
-  id: "website-id",
+  id: "6cb5a37b-1ec0-4b27-a165-45ae2760f117",
   domains: "mumbaiglug.org, www.mumbaiglug.org",
 };
 
 export const navLinks = [
   {
-    name: "Join",
-    href: "/#join",
+    name: "About",
+    href: "/#what-is-a-glug",
+  },
+  {
+    name: "Resources",
+    href: "/comingsoon",
+    //href: "/resources",
+  },
+  {
+    name: "Events",
+    href: "/comingsoon",
+    //href: "/events",
+  },
+  {
+    name: "Blog",
+    href: "/comingsoon",
+    //href: "/blog",
   },
   {
     name: "Contact",
-    href: "/#join",
+    href: "/comingsoon",
+    //href: "/contact",
   }
 ]
 

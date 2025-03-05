@@ -11,7 +11,7 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",
     "@tailwindcss/vite": "^4.0.9",
-    "astro": "^5.4.1",
+    "astro": "^5.4.2",
     "sharp": "^0.33.5",
     "tailwindcss": "^4.0.9"
   },
@@ -20,8 +20,14 @@
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
     "postcss": "^8.5.3",
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }

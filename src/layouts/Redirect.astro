@@ -28,12 +28,12 @@ const author = Astro.props.author || metaData.author;
       {title}
     </title>
 
-    <!--<script-->
-    <!--  is:inline-->
-    <!--  defer-->
-    <!--  src={umami.src}-->
-    <!--  data-website-id={umami.id}-->
-    <!--  data-domains={umami.domains}></script>-->
+    <script
+      is:inline
+      defer
+      src={umami.src}
+      data-website-id={umami.id}
+      data-domains={umami.domains}></script>
 
     <!-- SEO -->
     <meta name="description" content={description} />

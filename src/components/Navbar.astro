@@ -3,26 +3,29 @@ import { navLinks } from "@/utils";
 ---
 
 <nav
-  class="w-full p-4 md:p-8 lg:p-12 flex flex-col items-center justify-center text-center gap-4 md:gap-6 lg:gap-8"
+  class="flex w-full flex-col items-center justify-center gap-4 p-4 text-center md:gap-6 md:p-8 lg:gap-8 lg:p-12"
 >
   <h1>
-    <a href="/" class="text-primary text-3xl md:text-4xl lg:text-5xl font-bold"
+    <a href="/" class="text-primary text-3xl font-bold md:text-4xl lg:text-5xl"
       >Mumbai GNU/Linux Users' Group</a
     >
   </h1>
-  <!--<ul class="flex gap-4">-->
-  <!--  {-->
-  <!--    navLinks.map((link) => (-->
-  <!--      <li>-->
-  <!--        <a-->
-  <!--          href={link.href}-->
-  <!--          title="{link.name}"-->
-  <!--          class="hover:text-accent focus-within:text-accent hover:underline focus-within:underline md:text-lg lg:text-xl"-->
-  <!--        >-->
-  <!--          [{link.name}]-->
-  <!--        </a>-->
-  <!--      </li>-->
-  <!--    ))-->
-  <!--  }-->
-  <!--</ul>-->
+  <ul
+    class="flex w-full flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8"
+  >
+    {
+      navLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            title={link.name}
+            class="hover:text-accent focus-within:text-accent lowercase underline md:text-lg lg:text-xl"
+          >
+            [{link.name}]
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <hr class="w-full rounded border-1 border-white/25" />
 </nav>
