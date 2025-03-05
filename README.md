@@ -2,7 +2,7 @@
 
 ## 📌 Contributing to the Codebase
 
-This repository follows the principles of *Swatantra Software*, emphasizing minimalism, efficiency, and ethical computing. If you're making changes to the code, please adhere to the following guidelines:
+This repository follows the principles of *_Swatantra Software_*, emphasizing minimalism, efficiency, and ethical computing. If you're making changes to the code, please adhere to the following guidelines:
 
 1. **Follow FOSS Best Practices** – Ensure your contributions respect user freedom and align with free software principles.
 2. **Keep It Simple and Efficient** – Write minimal, functional code. Avoid unnecessary dependencies, excessive abstraction, and feature creep. Every line should serve a clear purpose.
