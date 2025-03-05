@@ -43,4 +43,5 @@ export const navLinks = [
 export const socials = {
   "GitHub": "https://github.com/mumbaiglug",
   "LinkedIn": "https://www.linkedin.com/groups/10060832/",
+  "Reddit": "https://www.reddit.com/r/mumbaiglug/",
 }
