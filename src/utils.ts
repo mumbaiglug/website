@@ -16,7 +16,7 @@ export const umami = {
 export const navLinks = [
   {
     name: "About",
-    href: "/#what-is-a-glug",
+    href: "/#about",
   },
   {
     name: "Resources",
@@ -34,8 +34,8 @@ export const navLinks = [
     //href: "/blog",
   },
   {
-    name: "Contact",
-    href: "/comingsoon",
+    name: "Join",
+    href: "/#join",
     //href: "/contact",
   }
 ]

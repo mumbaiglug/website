@@ -6,10 +6,10 @@ import { socials } from "@/utils";
 
 <BaseLayout>
   <main
-    class="flex w-full flex-col gap-8 p-4 md:gap-12 md:p-6 lg:gap-16 lg:p-8"
+    class="flex w-full flex-col gap-8 p-4 pb-8 md:gap-12 md:p-6 md:pb-12 lg:gap-16 lg:p-8 lg:pb-16"
   >
     <section
-      id="what-is-a-glug"
+      id="about"
       class="mx-auto flex w-full max-w-5xl flex-col gap-4 md:gap-6 lg:gap-8"
     >
       <h2 class="text-primary text-2xl font-bold md:text-3xl lg:text-4xl">
@@ -22,16 +22,79 @@ import { socials } from "@/utils";
           target="_blank"
           class="text-secondary-accent font-medium underline"
           >GNU/Linux Users' Group (GLUG)</a
-        > is a community dedicated to promoting and supporting <i>Swatantra</i> Software.
-        GLUGs bring together enthusiasts, developers, and advocates to share knowledge,
-        collaborate on projects, and spread awareness about free and open-source
-        software. Without a central authority, the GNU/Linux movement relies on local
-        groups like Mumbai GLUG to drive advocacy, education, and user support—empowering
-        individuals to take control of their computing.
+        > is a community dedicated to promoting and supporting <a
+          href="https://www.gnu.org/philosophy/free-sw.html#four-freedoms"
+          title="More info about Free Software"
+          target="_blank"
+          class="text-secondary-accent font-medium underline"
+          ><i>Swatantra</i> (Free/Libre) Software</a
+        >. GLUGs bring together enthusiasts, developers, and advocates to share
+        knowledge, collaborate on projects, and spread awareness about free and
+        open-source software. Without a central authority, the GNU/Linux
+        movement relies on local groups like Mumbai GLUG to drive advocacy,
+        education, and user support—empowering individuals to take control of
+        their computing.
       </p>
     </section>
     <section
-      id="join-us"
+      id="vision"
+      class="mx-auto flex w-full max-w-5xl flex-col gap-4 md:gap-6 lg:gap-8"
+    >
+      <h2 class="text-primary text-2xl font-bold md:text-3xl lg:text-4xl">
+        Our Vision
+      </h2>
+      <p class="text-lg md:text-xl lg:text-2xl">
+        Mumbai GLUG is built to foster a thriving community of
+        <b>GNU/Linux users, hackers, and tinkerers</b> who believe in the power of
+        free software and open collaboration.
+      </p>
+      <ul
+        class="ml-4 list-inside list-disc space-y-2 text-lg md:ml-8 md:space-y-4 md:text-xl lg:ml-12 lg:space-y-6 lg:text-2xl"
+      >
+        <li>
+          <b class="text-primary">Revive Hacker Culture</b> – Celebrate curiosity,
+          clever problem-solving, and a deep understanding of systems, beyond just
+          the basics.
+          <br />
+          <a
+            href="http://www.catb.org/~esr/faqs/hacker-howto.html"
+            title="Read More about Hacker Culture"
+            target="_blank"
+            class="text-secondary-accent font-medium underline">[read more]</a
+          >
+        </li><li>
+          <b class="text-primary">Advocate <i>Swatantra</i> Software</b> – Promote
+          digital freedom and user-controlled technology.
+          <br />
+          <a
+            href="https://www.oreilly.com/openbook/freedom/"
+            title="Read More about Free Software"
+            target="_blank"
+            class="text-secondary-accent font-medium underline">[read more]</a
+          >
+        </li>
+        <li>
+          <b class="text-primary">Defend Digital Privacy</b> - Advocate for online
+          privacy, encryption, and digital rights in an age of mass surveillance
+          and corporate tracking.
+          <br />
+          <a
+            href="https://www.gnu.org/philosophy/free-digital-society.en.html"
+            title="Read More about Privacy"
+            target="_blank"
+            class="text-secondary-accent font-medium underline">[read more]</a
+          >
+        </li>
+      </ul>
+      <p class="text-lg md:text-xl lg:text-2xl">
+        While we’re based in Mumbai, <b>this community is for everyone</b> passionate
+        about
+        <b>GNU/Linux and FOSS</b>. Whether you're here to explore, contribute,
+        or just connect, you’re welcome!
+      </p>
+    </section>
+    <section
+      id="join"
       class="mx-auto flex w-full max-w-5xl flex-col gap-4 md:gap-6 lg:gap-8"
     >
       <h2 class="text-primary text-2xl font-bold md:text-3xl lg:text-4xl">
@@ -52,7 +115,9 @@ import { socials } from "@/utils";
       </p>
       <p class="text-lg md:text-xl lg:text-2xl">
         Follow us on:
-        <ul class="ml-4 list-inside list-disc text-lg md:text-xl lg:text-2xl">
+        <ul
+          class="ml-4 list-inside list-disc text-lg md:ml-8 md:text-xl lg:ml-12 lg:text-2xl"
+        >
           <li>
             <a
               href={socials.LinkedIn}
