@@ -1,45 +1,35 @@
-# Launchpad - A Minimal Astro Starter
+# Mumbai GNU/Linux Users' Group (Mumbai GLUG) 
 
-Launchpad is a **fast**, **minimal**, and **SEO-friendly** [Astro](https://astro.build/) starter template designed to streamline your web development process. It comes with pre-configured settings, reusable components, and best practices for performance and accessibility.
+## 📌 Contributing to the Codebase
 
-![Launchpad Poster](https://launchpad.nnisarg.in/poster.jpg)
+This repository follows the principles of *Swatantra Software*, emphasizing minimalism, efficiency, and ethical computing. If you're making changes to the code, please adhere to the following guidelines:
 
-## 🚀 Features
-
-- ⚡ **Lightning Fast** – Powered by [Astro](https://astro.build/) for optimal performance
-- 📄 **Prebuilt Pages** – Home, About, and other essential pages
-- 🎨 **[TailwindCSS](https://tailwindcss.com/) Ready** – Pre-configured for styling
-- 🌍 **SEO Optimized** – Meta tags, Open Graph, and Twitter Card setup
-- 🔗 **Canonical URLs** – Pre-configured for better indexing
-- 🖼️ **Image Optimization** – Astro’s built-in image handling
-- 🔧 **Modular Components** – Easily reusable UI elements
-
-## 📦 Installation
-
-To get started with Launchpad, run the following command:
-
-```sh
-pnpm create astro@latest --template nnisarggada/launchpad
-```
+1. **Follow FOSS Best Practices** – Ensure your contributions respect user freedom and align with free software principles.
+2. **Keep It Simple and Efficient** – Write minimal, functional code. Avoid unnecessary dependencies, excessive abstraction, and feature creep. Every line should serve a clear purpose.
+3. **No Unnecessary JavaScript & Optimized Images** - Use JavaScript only if absolutely necessary. All images must be in WebP format and under 200KB.
+4. **Write Clean & Documented Code** – Maintain clarity with modular and well-documented code.
+5. **Respect Privacy & Security** – Avoid using proprietary or privacy-invasive tools. Stick to ethical alternatives.
+6. **Report Issues & Discuss Changes** – Before making significant changes, discuss them in the community.
+7. **License Compliance** – Ensure all contributions align with the licensing policy of this repository.
 
 ## 🛠️ Usage
 
 Run the development server:
 
 ```sh
-pnpm dev
+npm run dev
 ```
 
 Build for production:
 
 ```sh
-pnpm build
+npm run build
 ```
 
 Preview the production build:
 
 ```sh
-pnpm preview
+npm run preview
 ```
 
 ## 📂 Project Structure
@@ -57,20 +47,6 @@ launchpad/
 │── package.json     # Dependencies
 ```
 
-## 🔧 Configuration
-
-### **SEO Metadata**
-Modify `metaData` in `src/utils.ts`:
-
-```js
-export const metaData = {
-  title: "Launchpad | A minimal Astro Starter by Nnisarg Gada",
-  description: "Launchpad is a fast, minimal, and SEO-friendly Astro starter template designed for modern web projects.",
-  image: "https://launchpad.nnisarg.in/poster.jpg",
-  author: "Nnisarg Gada",
-};
-```
-
 ## 📜 License
 
 This project is licensed under the GNU General Public License v3 - see the [LICENSE](LICENSE.md) file for details.
@@ -78,8 +54,3 @@ This project is licensed under the GNU General Public License v3 - see the [LICE
 ## 💡 Author
 
 Created by **[Nnisarg Gada](https://nnisarg.in)**. Feel free to reach via [contact@nnisarg.in](mailto:contact@nnisarg.in)!
-
----
-
-🚀 **Start building with Launchpad today!**
-
