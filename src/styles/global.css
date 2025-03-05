@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+
+  --default-font-family: monospace;
+
+  --color-background: #131313;
+  --color-foreground: #f3e3ca;
+  --color-primary: #ff914c;
+  --color-primary-accent: #FFC39E;
+  --color-secondary: #1a2237;
+  --color-secondary-accent: #98b2e3;
+}
+
 @layer base {
   * {
     margin: 0;
