@@ -6,13 +6,13 @@ import { socials } from "@/utils";
 
 <BaseLayout>
   <main
-    class="w-full flex flex-col gap-8 md:gap-12 lg:gap-16 p-4 md:p-6 lg:p-8"
+    class="flex w-full flex-col gap-8 p-4 md:gap-12 md:p-6 lg:gap-16 lg:p-8"
   >
     <section
       id="what-is-a-glug"
-      class="w-full max-w-5xl mx-auto flex flex-col gap-4 md:gap-6 lg:gap-8"
+      class="mx-auto flex w-full max-w-5xl flex-col gap-4 md:gap-6 lg:gap-8"
     >
-      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
+      <h2 class="text-primary text-2xl font-bold md:text-3xl lg:text-4xl">
         What is a GLUG?
       </h2>
       <p class="text-lg md:text-xl lg:text-2xl">
@@ -20,8 +20,8 @@ import { socials } from "@/utils";
           href="https://en.wikipedia.org/wiki/Linux_user_group"
           title="More info about GLUGs"
           target="_blank"
-          class="underline text-secondary-accent font-medium"
-          >GNU/Linux Users Group (GLUG)</a
+          class="text-secondary-accent font-medium underline"
+          >GNU/Linux Users' Group (GLUG)</a
         > is a community dedicated to promoting and supporting Swatantra Software.
         GLUGs bring together enthusiasts, developers, and advocates to share knowledge,
         collaborate on projects, and spread awareness about free and open-source
@@ -32,9 +32,9 @@ import { socials } from "@/utils";
     </section>
     <section
       id="join-us"
-      class="w-full max-w-5xl mx-auto flex flex-col gap-4 md:gap-6 lg:gap-8"
+      class="mx-auto flex w-full max-w-5xl flex-col gap-4 md:gap-6 lg:gap-8"
     >
-      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary">
+      <h2 class="text-primary text-2xl font-bold md:text-3xl lg:text-4xl">
         Join Us
       </h2>
       <p class="text-lg md:text-xl lg:text-2xl">
@@ -42,7 +42,7 @@ import { socials } from "@/utils";
           href="/join"
           title="Join Mumbai GLUG"
           target="_blank"
-          class="underline text-secondary-accent font-medium">WhatsApp group</a
+          class="text-secondary-accent font-medium underline">WhatsApp group</a
         > and connect with like-minded individuals who support Swatantra Software
         and open-source principles.
       </p>
@@ -52,13 +52,13 @@ import { socials } from "@/utils";
       </p>
       <p class="text-lg md:text-xl lg:text-2xl">
         Follow us on:
-        <ul class="list-disc list-inside ml-4 text-lg md:text-xl lg:text-2xl">
+        <ul class="ml-4 list-inside list-disc text-lg md:text-xl lg:text-2xl">
           <li>
             <a
               href={socials.LinkedIn}
               title="LinkedIn"
               target="_blank"
-              class="underline text-primary font-medium">LinkedIn</a
+              class="text-primary font-medium underline">LinkedIn</a
             >
           </li>
           <li>
@@ -66,7 +66,7 @@ import { socials } from "@/utils";
               href={socials.GitHub}
               title="GitHub"
               target="_blank"
-              class="underline text-primary font-medium">GitHub</a
+              class="text-primary font-medium underline">GitHub</a
             >
           </li>
         </ul>
@@ -76,7 +76,7 @@ import { socials } from "@/utils";
           href="mailto:nnisarg@mumbaiglug.org"
           title="Email Nnisarg"
           target="_blank"
-          class="underline text-secondary-accent font-medium"
+          class="text-secondary-accent font-medium underline"
           >nnisarg@mumbaiglug.org</a
         >
       </p>
