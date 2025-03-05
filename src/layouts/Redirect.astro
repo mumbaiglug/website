@@ -1,8 +1,7 @@
 ---
-import "@/styles/global.css";
 import { metaData, umami } from "@/utils";
 
-import Navbar from "@/components/Navbar.astro";
+const link = Astro.props.link;
 
 const title = Astro.props.title
   ? Astro.props.title + " | " + metaData.title
@@ -12,8 +11,12 @@ const image = Astro.props.image || metaData.image;
 const author = Astro.props.author || metaData.author;
 ---
 
-<html lang="en">
+<!doctype html>
+<html>
   <head>
+    <meta http-equiv="refresh" content={`0;url=${link}`} />
+    <link rel="canonical" href={link} />
+    <meta name="robots" content="noindex" />
     <meta charset="UTF-8" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -21,22 +24,9 @@ const author = Astro.props.author || metaData.author;
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-
-    <!-- SEO -->
-    <meta name="description" content={description} />
-    <meta name="author" content={author} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url.href} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:site_name" content={title} />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content={image} />
-    <link rel="canonical" href={Astro.url.href} />
-    <meta name="robots" content="index, follow" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <!-- SEO -->
+    <title>
+      {title}
+    </title>
 
     <!--<script-->
     <!--  is:inline-->
@@ -44,9 +34,28 @@ const author = Astro.props.author || metaData.author;
     <!--  src={umami.src}-->
     <!--  data-website-id={umami.id}-->
     <!--  data-domains={umami.domains}></script>-->
+
+    <!-- SEO -->
+    <meta name="description" content={description} />
+    <meta name="author" content={author} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={link} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content={title} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={image} />
+    <link rel="canonical" href={Astro.url.href} />
+    <meta name="robots" content="index, follow" />
   </head>
-  <body class="h-screen w-screen bg-background text-foreground">
-    <Navbar />
-    <slot />
+
+  <body>
+    <p>Redirecting to {title}...</p>
+    <p>
+      If you are not redirected, <a
+        href={link}
+        class="font-medium text-blue-700 underline">click here</a
+      >.
+    </p>
   </body>
 </html>

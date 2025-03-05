@@ -21,3 +21,8 @@ export const navLinks = [
     href: "/#join",
   }
 ]
+
+export const socials = {
+  "GitHub": "https://github.com/mumbaiglug",
+  "LinkedIn": "https://www.linkedin.com/groups/10060832/",
+}
