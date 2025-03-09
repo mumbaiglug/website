@@ -1,8 +1,6 @@
-import { warn } from "node_modules/astro/dist/core/logger/core";
-
 export const metaData = {
   title: "Mumbai GNU/Linux Users' Group",
-  description: "A community-driven GNU/Linux Users' Group (GLUG) in Mumbai promoting Swatantra Software, open-source collaboration, and digital freedom through advocacy, education, and user support.",
+  description: "A community-driven GNU/Linux Users' Group (GLUG) in Mumbai promoting Swatantra (Free/Libre) Software, open-source collaboration, and digital freedom through advocacy, education, and user support.",
   image: "https://mumbaiglug.org/poster.jpg",
   author: "Mumbai GLUG",
 };
