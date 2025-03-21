@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://launchpad.nnisarg.in",
+  site: "https://mumbaiglug.org",
 
   prefetch: {
     prefetchAll: true,
